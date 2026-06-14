@@ -1,8 +1,8 @@
-# fable-like-skill
+# fable-like-skill — Claude Fable 5 engineering discipline for Claude Code
 
-> Fable-5-style engineering discipline for any model you actually run today. Honest about the line between capability and character.
+> A Claude Code skill that brings Claude Fable 5's engineering discipline to the model you run today (e.g. Claude Opus 4.8) — decisive action, progress claims grounded in tool output, fresh-context verification, and no over-engineering. Honest about the line between capability and character.
 
-`fable-like-skill` is a Claude Code skill that ports a set of **prompt-tunable behavioral patterns** — the working "character" Anthropic published as migration guidance for its Claude Fable 5 model — onto a **non-Fable** model such as Claude Opus 4.8. It's a single `SKILL.md` file: no runtime, no dependencies, no network calls.
+`fable-like-skill` is a **Claude Code skill** that ports a set of **prompt-tunable behavioral patterns** — the working "character" Anthropic published as migration guidance for its **Claude Fable 5** model — onto a **non-Fable** model such as **Claude Opus 4.8**. It's a single `SKILL.md` file: no runtime, no dependencies, no network calls.
 
 ## Capability vs. character — read this first
 
