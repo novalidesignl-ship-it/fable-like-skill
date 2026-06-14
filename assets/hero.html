@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --bg:#17150F; --fg:#F3EEE3; --muted:#A89F8C; --accent:#D98E5A;
+    --line:rgba(243,238,227,.10);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#0d0c08;}
+  .stage{
+    width:1200px;height:630px;position:relative;overflow:hidden;
+    background:
+      radial-gradient(1200px 620px at 80% -12%, rgba(217,142,90,.17), transparent 60%),
+      radial-gradient(820px 520px at -5% 112%, rgba(217,142,90,.06), transparent 55%),
+      var(--bg);
+    color:var(--fg);
+    font-family:Georgia,'Times New Roman',serif;
+    padding:74px 82px;
+    display:flex;flex-direction:column;justify-content:space-between;
+  }
+  .stage::after{
+    content:"";position:absolute;inset:22px;border:1px solid var(--line);
+    border-radius:14px;pointer-events:none;
+  }
+  .eyebrow{
+    font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;
+    font-size:17px;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--accent);
+  }
+  .eyebrow .dot{opacity:.5;margin:0 6px;}
+  h1{
+    font-size:80px;line-height:.98;font-weight:400;letter-spacing:-.012em;
+    margin-top:20px;
+  }
+  .sub{
+    font-size:26px;color:var(--muted);margin-top:22px;font-style:italic;
+    max-width:780px;line-height:1.35;
+  }
+  .principles{
+    display:grid;grid-template-columns:1fr 1fr;gap:16px 52px;
+    font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:20px;
+  }
+  .principles div{display:flex;gap:14px;align-items:baseline;}
+  .principles .arw{color:var(--accent);}
+  .principles .t{color:#DAD3C5;}
+  .foot{display:flex;justify-content:space-between;align-items:flex-end;}
+  .tag{font-size:31px;font-style:italic;}
+  .tag b{font-style:normal;color:var(--accent);font-weight:400;}
+  .repo{font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:18px;color:var(--muted);}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div>
+      <div class="eyebrow">claude code skill <span class="dot">·</span> opus 4.8</div>
+      <h1>fable-like-skill</h1>
+      <div class="sub">Claude Fable&nbsp;5's engineering discipline — on the model you can actually run today.</div>
+    </div>
+
+    <div class="principles">
+      <div><span class="arw">&rarr;</span><span class="t">act when you have enough info</span></div>
+      <div><span class="arw">&rarr;</span><span class="t">ground every &ldquo;fixed&rdquo; in tool output</span></div>
+      <div><span class="arw">&rarr;</span><span class="t">verify with fresh context</span></div>
+      <div><span class="arw">&rarr;</span><span class="t">stop over-engineering</span></div>
+    </div>
+
+    <div class="foot">
+      <div class="tag">Character, <b>not capability.</b></div>
+      <div class="repo">github.com/novalidesignl-ship-it/fable-like-skill</div>
+    </div>
+  </div>
+</body>
+</html>

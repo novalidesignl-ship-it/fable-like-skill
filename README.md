@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hero.png" alt="fable-like-skill — Claude Fable 5's engineering discipline for Claude Opus 4.8: act when you have enough info, ground every &quot;fixed&quot; in tool output, verify with fresh context, stop over-engineering" width="840">
+</p>
+
 # fable-like-skill — Claude Fable 5 engineering discipline for Claude Code
 
 > A Claude Code skill that brings Claude Fable 5's engineering discipline to the model you run today (e.g. Claude Opus 4.8) — decisive action, progress claims grounded in tool output, fresh-context verification, and no over-engineering. Honest about the line between capability and character.
