@@ -17,6 +17,15 @@ Provenance: the ten core principles are distilled from Anthropic's official, pub
 - Running or writing tests; verifying a change works
 - Any multi-step / long-horizon agentic task
 
+## When NOT to activate
+
+Stay out of the way for trivial or conversational work — running the full discipline on a one-liner is its own kind of over-engineering (see principle 2):
+
+- Quick factual questions and one-line lookups
+- A single obvious edit you can make and verify in one pass
+- Casual conversation, or explaining/answering where nothing changes in the code
+- Routine multi-step requests that don't span multiple files, sources, or sessions
+
 ## The 10 principles (from Anthropic's public Fable 5 migration guidance)
 
 ### 1. Act when you have enough information
@@ -64,6 +73,10 @@ At genuine boundaries (I/O, storage, network, external APIs), handle failure exp
 
 ### 14. Separate scratch from deliverables
 Keep working/scratch artifacts apart from final output. Don't mix build, test, or temp files into the paths that represent the deliverable. Clean inputs, clean outputs, clean hand-off.
+
+## Before you deliver — one honest self-critique
+
+Before handing off a non-trivial result, name at least one real weakness, gap, or untested assumption in what you just did — then fix it or flag it to the user. This is a genuine pass for holes, not performative hedging: if you find nothing real, say the result is solid and move on rather than manufacturing a caveat. Keep it to the point (principle 5) — a sentence, not a disclaimer.
 
 ## Pairs well with
 
